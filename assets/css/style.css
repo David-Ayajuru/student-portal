@@ -68,21 +68,26 @@ header {
   top: 0;
   z-index: 1000;
 }
-
 .navbar {
-  width: 90%;
-  margin: auto;
-  min-height: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  width: 100%;
+  padding: 15px 20px;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-weight: bold;
-  color: var(--primary-color);
+  color: #2563eb;
+  margin: 0;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 45px;
+  cursor: pointer;
+  color: #2563eb;
 }
 
 .nav-links {
@@ -312,7 +317,7 @@ header {
 }
 
 .navbar {
-  width: 90%;
+  width: 95%;
   margin: auto;
   min-height: 75px;
   display: flex;
@@ -322,7 +327,7 @@ header {
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: var(--primary-color);
 }
@@ -577,23 +582,25 @@ header {
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
-    font-size: 30px;
-    cursor: pointer;
+    margin-left: auto;
   }
 
   .nav-links {
     display: none;
-    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    left: 0;
     width: 100%;
+    background: #ffffff;
+    flex-direction: column;
     text-align: center;
-    background: white;
-    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
   }
 
   .nav-links.active {
     display: flex;
   }
-
   .hero,
   .about-content,
   .services-grid,
