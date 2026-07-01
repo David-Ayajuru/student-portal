@@ -13,19 +13,21 @@
         <nav class="navbar">
             <div class="logo">StudentPortal</div>
 
-            <ul class="nav-links">
+            <div class="menu-toggle" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
+
+                <li><a href="login.html" class="btn btn-outline">Login</a></li>
+                <li><a href="register.html" class="btn btn-primary">Register</a></li>
             </ul>
 
-            <div class="nav-buttons">
-                <a href="login.html" class="btn btn-outline">Login</a>
-                <a href="register.html" class="btn btn-primary">Register</a>
-            </div>
-        </nav>
     </header>
     <section id="hero" class="hero">
         <div class="hero-text">
@@ -193,6 +195,7 @@
 
         <p class="footer-bottom">&copy; 2026 Student Portal. All rights reserved.</p>
     </footer>
+    <script src="assets/js/module1.js"></script>
 
 </body>
 
