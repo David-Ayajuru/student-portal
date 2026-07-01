@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/module5.css">
+    <title>Course Registration</title>
+</head>
+
+<body>
+    <header>
+        <h1>Course Registration</h1>
+        <a href="dashboard.html" class="btn">Dashboard</a>
+    </header>
+
+    <div class="container">
+
+        <div class="courses">
+
+            <h2>Available Courses</h2>
+
+            <button onclick="registerCourse('HTML')">HTML</button>
+
+            <button onclick="registerCourse('CSS')">CSS</button>
+
+            <button onclick="registerCourse('JavaScript')">JavaScript</button>
+
+            <button onclick="registerCourse('Bootstrap')">Bootstrap</button>
+
+            <button onclick="registerCourse('React')">React</button>
+
+        </div>
+
+        <div class="registered">
+
+            <h2>Registered Courses</h2>
+
+            <ul id="courseList"></ul>
+
+            <h3>Total Courses:
+                <span id="courseCount">0</span>
+            </h3>
+
+        </div>
+
+    </div>
+
+    <p id="message"></p>
+    <script src="assets/js/module5.js"></script>
+
+</body>
+
+</html>

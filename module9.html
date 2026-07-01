@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/module9.css">
+    <title>Image Gallery</title>
+</head>
+
+<body>
+    <header>
+        <h1>Image Gallery</h1>
+        <a href="dashboard.html" class="btn">Dashboard</a>
+    </header>
+    <div class="gallery">
+
+</html>
+<div class="gallery">
+    <img src="assets/image/analyst-72.png" onclick="openImage(0)" alt="Image 1">
+
+    <img src="assets/image/designer-40.png" onclick="openImage(1)" alt="Image 2">
+
+    <img src="assets/image/market-analysis-31.png" onclick="openImage(2)" alt="Image 3">
+
+    <img src="assets/image/smartphone-data-17.png" onclick="openImage(3)" alt="Image 4">
+
+</div>
+<div id="viewer" class="viewer">
+
+    <span class="close" onclick="closeViewer()">&times;</span>
+
+    <button class="prev" onclick="previousImage()">&#10094;</button>
+
+    <img id="viewerImage">
+
+    <button class="next" onclick="nextImage()">&#10095;</button>
+
+</div>
+<script src="assets/js/module9.js"></script>
+
+
+
+</body>
